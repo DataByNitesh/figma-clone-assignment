@@ -108,10 +108,13 @@ const ProductPage = () => {
 
         {/* CONTACT FORM */}
         {showForm && (
-          <form className="flex flex-col gap-3 mt-4"
-           onSubmit={(e)=>{e.preventDefault()
-            alert("Form Submitted")
-           }}">
+          <form
+            className="flex flex-col gap-3 mt-4"
+            onSubmit={(e) => {
+              e.preventDefault();
+              alert("Form Submitted");
+            }}
+          >
             <input className="border p-2 rounded" placeholder="First Name" />
 
             <input className="border p-2 rounded" placeholder="Last Name" />
