@@ -110,8 +110,7 @@ const ProductPage = () => {
         {showForm && (
           <form
             className="flex flex-col gap-3 mt-4"
-            onSubmit={(e) => {
-              e.preventDefault();
+            action={() => {
               alert("Form Submitted");
             }}
           >
